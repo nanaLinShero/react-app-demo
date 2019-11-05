@@ -19,14 +19,14 @@ npm i less less-loader -D -S
 ```
 #### 添加webpack的less-loader配置
 在根目录下config文件夹中，找到文件webpack.config.js，搜索sassModuleRegex会找到如下代码：  
-![代码 图片](/src/assets/images/readme/re_01.jpg)
+![代码 图片](/src/assets/images/readme/re_01.jpg)  
 因为create-react-app初始化会自动配置css-loader和sass-loader，但不会配置less-loader，所以在上述代码之后添加以下代码：
 ```javascript
 const lessRegex = /\.less$/;
 const lessModuleRegex = /\.module\.less$/;
 ```
 继续搜索下一个sassModuleRegex，会看到如下代码：  
-![代码 图片](/src/assets/images/readme/re_02.jpg)
+![代码 图片](/src/assets/images/readme/re_02.jpg)  
 在其后加入less-loader的配置即可完成，配置如下：
 ```javascript
 {
