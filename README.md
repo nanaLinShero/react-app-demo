@@ -1,4 +1,4 @@
-# react+react-router+less+axios
+# react+react-router+less+redux+axios
 >让代码跑一会儿
 
 ## create-react-app初始化项目
@@ -56,4 +56,16 @@ const lessModuleRegex = /\.module\.less$/;
 - routes 路由配置
 - stores 状态管理
 - utils 工具类函数
+
 #### 2.设置文件别名
+webpack配置文件路径别名，可在代码中简写路径，便于管理路径。
+- 修改config文件夹下的paths.js中的路径映射  
+![代码 图片](/src/assets/images/readme/re_03.jpg)  
+- 修改config文件夹下的webpack.config.js中的别名对应(全局搜索alias即可找到，此处配置了@)  
+![代码 图片](/src/assets/images/readme/re_04.jpg)  
+
+#### 3.安装与配置路由react-router
+```
+npm i react-router react-router-dom
+```
+- 在pages文件夹中
