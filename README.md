@@ -1,4 +1,4 @@
-# react+react-router+less+redux+axios
+# react + less + react-router + axios + react-redux
 >让代码跑一会儿
 
 ## create-react-app初始化项目
@@ -11,11 +11,15 @@ create-react-app react-app-demo
 - 启动：npm start
 - 测试：npm test
 - 打包：npm run build
-- 展开：npm run eject -->操作不可逆
+- 展开：npm run eject -->此操作不可逆
 
 ## less配置
 ```
 npm i less less-loader -D -S
+```
+#### 展开/生成webpack配置文件，因为默认情况下是隐藏的，所以要修改webpack配置，需要先展开配置文件
+```
+npm run eject
 ```
 #### 添加webpack的less-loader配置
 在根目录下config文件夹中，找到文件webpack.config.js，搜索sassModuleRegex会找到如下代码：  
@@ -69,3 +73,5 @@ webpack配置文件路径别名，可在代码中简写路径，便于管理路�
 npm i react-router react-router-dom
 ```
 - 在pages文件夹中添加文件home.js和about.js
+- 在routes文件夹中添加index.js配置路由
+- 在App.js中引入路由
